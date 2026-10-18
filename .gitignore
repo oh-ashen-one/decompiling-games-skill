@@ -1,0 +1,10 @@
+# Only original public docs/code and synthetic fixtures belong in this repository.
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+private/
+local-data/
+analysis-output/
+retail/

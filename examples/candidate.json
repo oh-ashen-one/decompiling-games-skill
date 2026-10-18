@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "scenario": "invented-counter-and-position-v1",
+  "build_id": "synthetic-candidate-v1",
+  "records": [
+    {"step": 0, "state": {"counter": 0, "position": 0.0}},
+    {"step": 1, "state": {"counter": 1, "position": 0.25}},
+    {"step": 2, "state": {"counter": 2, "position": 0.5}}
+  ]
+}

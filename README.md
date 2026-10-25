@@ -20,6 +20,7 @@ Follow your agent client's documented skill-folder setup if you want persistent 
 |---|---|
 | [Decision guide](references/decision-guide.md) | Choose matching decompilation, reimplementation, static recompilation, or asset conversion |
 | [Bully workflow](references/bully-workflow.md) | Fingerprint the correct edition, map engine evidence, and validate one slice |
+| [REA and Ghidra](references/rea-and-ghidra.md) | Default toolchain: when to use REA or Ghidra, pinned setup, approvals and the cloud boundary |
 | [Local and cloud models](references/local-cloud.md) | Bound context, protect private inputs, and measure model usefulness |
 | [Creator methods and credits](references/creator-methods.md) | Separate IW4L, Chasm, SK8 and recompilation contributions |
 | [Source and license catalog](references/source-catalog.md) | Dated primary-source references, roles and reuse boundaries |

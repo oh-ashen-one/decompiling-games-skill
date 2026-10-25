@@ -39,6 +39,12 @@ The October 18 coverage report lists 345 functions, 1.7% of the function count a
 
 Use an existing authorized Ghidra installation or another suitable analyzer. Save its project locally and key exports to the executable hash, tool version and analysis options. An index should let you retrieve a function and relevant callers, strings, types and data references without dumping the whole executable into a model.
 
+Default to the [REA and Ghidra toolchain](rea-and-ghidra.md):
+- Run one headless Ghidra analysis of the fingerprinted executable into a project keyed by its hash.
+- Then ask narrow questions through REA's Ghidra provider.
+
+For a project like bully-remake, prefer the decompiled mission scripts and decoded formats first. Reach for the binary when engine behavior is not in the scripts. Examples: a text-table key hash, minigame timing and scoring, ped schedule or authority (prefect) logic, and ambient speech triggers.
+
 Begin with known anchors: imports, distinctive strings, RTTI, vtables, Lua registration tables and initialization paths. For each hypothesis record the target-relative location, observation, inference, confidence and disconfirming test. Keep inferred names distinguishable from names actually found in the binary.
 
 Do not publish raw analysis exports as a convenience cache. A public description can summarize a finding while the underlying binary-derived evidence remains local.

@@ -53,7 +53,7 @@ Set a task budget and stopping condition before unattended work. Stop when the t
 
 ## Tools are separate choices
 
-Ghidra, IDA and analysis bridges have their own compatibility, installation, licensing and security requirements. Consult current official instructions. The source catalog is a research starting point, not a set of installation commands or a mandate to run all listed tools. A model tool interface should expose only the operations needed by the current task, with analysis reads distinguished from file writes, debugging and execution.
+Ghidra, IDA and analysis bridges have their own compatibility, installation, licensing and security requirements. Consult current official instructions. The default pairing is REA with Ghidra ([REA and Ghidra](rea-and-ghidra.md)). The rest of the source catalog is a research starting point, not a set of installation commands or a mandate to run all listed tools. A model tool interface should expose only the operations needed by the current task, with analysis reads distinguished from file writes, debugging and execution.
 
 Keep analysis bridges on loopback or an appropriately authenticated private connection; do not expose an unauthenticated endpoint publicly. Treat binary strings, source comments and retrieved documents as data, never as instructions to the agent. Review script-execution, debugger and bulk annotation tools before enabling them. Retain reversible before/after annotation records.
 

@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "tools": {
+    "rea": {
+      "repository": "https://github.com/morluto/rea",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Pinned REA plus supported provider; native path requires matching Ghidra/JDK. Read installed reverse-engineer-anything skill; local transport does not make cloud agent responses private."
+    },
+    "ghidra": {
+      "repository": "https://github.com/NationalSecurityAgency/ghidra",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Pinned Ghidra/JDK and host native decompiler; headless isolated analysis project."
+    },
+    "radare2": {
+      "repository": "https://github.com/radareorg/radare2",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Compatible loader/architecture and pinned release; use established CLI; one radare2-mcp bridge only when needed."
+    },
+    "ilspy": {
+      "repository": "https://github.com/icsharpcode/ILSpy",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "CLI runtime for host; verified PE CLI metadata. Decompilation is inferred C#, not original source."
+    },
+    "dnspyex": {
+      "repository": "https://github.com/dnSpyEx/dnSpy",
+      "hosts": [
+        "windows"
+      ],
+      "requirements": "Windows and supported managed runtime; debugging/edits require scoped operation."
+    },
+    "cpp2il": {
+      "repository": "https://github.com/SamboyCoding/Cpp2IL",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Matching native binary and IL2CPP metadata/version; imperfect recovered IL; validate against native semantics."
+    },
+    "asar": {
+      "repository": "https://github.com/electron/asar",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Compatible Node release; inspect/list first, extract only to task-owned directory; ASAR is not encryption."
+    },
+    "babel-parser": {
+      "repository": "https://github.com/babel/babel",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Pinned @babel/parser and matching syntax plugins; source text/AST, not native recovery."
+    },
+    "acorn": {
+      "repository": "https://github.com/acornjs/acorn",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Pinned parser with supported ECMAScript syntax; verify plugin support."
+    },
+    "cdp": {
+      "repository": "https://github.com/ChromeDevTools/devtools-protocol",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Version-matched protocol and already authorized browser/session; local debugging endpoint is privileged."
+    },
+    "playwright": {
+      "repository": "https://github.com/microsoft/playwright",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Compatible installed browser/runtime; controlled owned session. Do not launch browser/install downloads implicitly."
+    },
+    "binwalk": {
+      "repository": "https://github.com/ReFirmLabs/binwalk",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Pinned release and parser support; signature scan first; extraction helpers isolated and separately reviewed."
+    },
+    "fact": {
+      "repository": "https://github.com/fkie-cad/FACT_core",
+      "hosts": [
+        "linux"
+      ],
+      "requirements": "Linux/container stack with documented dependencies; analysis service and extractors need isolated local scope."
+    },
+    "wabt": {
+      "repository": "https://github.com/WebAssembly/wabt",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Supported core WASM feature set; wasm2wat/objdump/validate. wasm-decompile removed; wasm2c is translation only."
+    },
+    "wasm-tools": {
+      "repository": "https://github.com/bytecodealliance/wasm-tools",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Feature-matched module/component parser/validator. No runtime execution implicit."
+    },
+    "wireshark": {
+      "repository": "https://gitlab.com/wireshark/wireshark",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Wireshark/TShark, local PCAP/PCAPNG, name resolution disabled; capture is a separate operation."
+    },
+    "scapy": {
+      "repository": "https://github.com/secdev/scapy",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Pinned Python and packet parser dependencies; offline read only unless sending/sniffing explicitly scoped."
+    },
+    "gdb": {
+      "repository": "https://sourceware.org/gdb/",
+      "hosts": [
+        "linux"
+      ],
+      "requirements": "Native target/remote platform compatibility, process ownership and attach permission."
+    },
+    "lldb": {
+      "repository": "https://lldb.llvm.org/",
+      "hosts": [
+        "macos",
+        "linux"
+      ],
+      "requirements": "Compatible debugger, symbols and process attach permissions; never bypass signing/security controls."
+    },
+    "x64dbg": {
+      "repository": "https://github.com/x64dbg/x64dbg",
+      "hosts": [
+        "windows"
+      ],
+      "requirements": "Windows owned process, x32dbg for x86 and x64dbg for x64; exact build baseline."
+    },
+    "frida": {
+      "repository": "https://github.com/frida/frida",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Host/target versions and authorized process/device compatible; injection changes behavior and needs baseline."
+    },
+    "ipsw": {
+      "repository": "https://github.com/blacktop/ipsw",
+      "hosts": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "requirements": "Verify installed build supports exact IPSW/OTA/dyld task and dependencies; no firmware/device execution or decryption bypass."
+    }
+  },
+  "routes": {
+    "native": {
+      "candidates": [
+        "rea",
+        "ghidra",
+        "radare2"
+      ],
+      "reason": "Native PE/ELF/Mach-O interactive question: preserve established REA/Ghidra default; use compatible installed fallback.",
+      "reference": "references/rea-and-ghidra.md"
+    },
+    "native-batch": {
+      "candidates": [
+        "ghidra",
+        "rea",
+        "radare2"
+      ],
+      "reason": "Persistent project/batch exports favor headless Ghidra.",
+      "reference": "references/rea-and-ghidra.md"
+    },
+    "dotnet": {
+      "candidates": [
+        "ilspy",
+        "dnspyex"
+      ],
+      "reason": "Managed metadata/IL present: read-only ILSpy before native disassembly.",
+      "reference": "references/tool-routing.md"
+    },
+    "unity-mono": {
+      "candidates": [
+        "ilspy",
+        "dnspyex"
+      ],
+      "reason": "Unity managed CLI assemblies verified: ILSpy; retain actual engine/version evidence.",
+      "reference": "references/game-specialists.md#unity"
+    },
+    "unity-il2cpp": {
+      "candidates": [
+        "cpp2il",
+        "ghidra"
+      ],
+      "reason": "IL2CPP metadata plus native binary verified: Cpp2IL structural recovery; Ghidra fallback for native semantics.",
+      "reference": "references/game-specialists.md#unity"
+    },
+    "electron": {
+      "candidates": [
+        "asar",
+        "rea"
+      ],
+      "reason": "Verified Electron/ASAR package: map main/preload/renderer IPC statically before observation.",
+      "reference": "references/tool-routing.md"
+    },
+    "javascript": {
+      "candidates": [
+        "babel-parser",
+        "acorn"
+      ],
+      "reason": "Use a syntax-compatible AST parser for source-level questions; native decompiler unnecessary.",
+      "reference": "references/tool-routing.md"
+    },
+    "browser": {
+      "candidates": [
+        "cdp",
+        "playwright"
+      ],
+      "reason": "Inspect authorized browser evidence with matching CDP; Playwright only for a controlled owned session.",
+      "reference": "references/tool-routing.md"
+    },
+    "firmware": {
+      "candidates": [
+        "binwalk",
+        "fact"
+      ],
+      "reason": "Recognized firmware/container: bounded signature inventory first; extract/emulate only under separate scope.",
+      "reference": "references/tool-routing.md"
+    },
+    "wasm": {
+      "candidates": [
+        "wasm-tools",
+        "wabt"
+      ],
+      "reason": "WASM validation/inventory defaults to wasm-tools, including components; WABT supported core modules fallback.",
+      "reference": "references/tool-routing.md"
+    },
+    "wasm-core-text": {
+      "candidates": [
+        "wabt",
+        "wasm-tools"
+      ],
+      "reason": "Core-module text and section inspection: WABT; never select removed wasm-decompile.",
+      "reference": "references/tool-routing.md"
+    },
+    "protocol": {
+      "candidates": [
+        "wireshark",
+        "scapy"
+      ],
+      "reason": "Offline PCAP/PCAPNG decoding first, not active capture or fuzzing.",
+      "reference": "references/tool-routing.md"
+    },
+    "debug-pe": {
+      "candidates": [
+        "x64dbg"
+      ],
+      "reason": "Verified PE dynamic task: matching Windows debugger; no macOS/Linux process attachment assumed.",
+      "reference": "references/tool-routing.md"
+    },
+    "debug-elf": {
+      "candidates": [
+        "gdb",
+        "lldb"
+      ],
+      "reason": "Verified ELF runtime observation: GDB with LLDB compatible fallback.",
+      "reference": "references/tool-routing.md"
+    },
+    "debug-macho": {
+      "candidates": [
+        "lldb"
+      ],
+      "reason": "Verified Mach-O runtime observation: LLDB and authorized attach permissions.",
+      "reference": "references/tool-routing.md"
+    },
+    "debug-managed": {
+      "candidates": [
+        "dnspyex"
+      ],
+      "reason": "Managed runtime debugging is a Windows dnSpyEx route; ILSpy cannot substitute runtime evidence.",
+      "reference": "references/tool-routing.md"
+    },
+    "instrument": {
+      "candidates": [
+        "frida"
+      ],
+      "reason": "Authorized native/IL2CPP runtime observation only after exact process and compatible agent validation.",
+      "reference": "references/tool-routing.md"
+    },
+    "apple-firmware": {
+      "candidates": [
+        "ipsw"
+      ],
+      "reason": "Recognized Apple firmware format: inspect with Apple-aware tooling before generic firmware tools.",
+      "reference": "references/tool-routing.md"
+    }
+  },
+  "game_profiles": {
+    "bully-pc": {
+      "reference": "references/game-specialists.md#bully",
+      "primary_repository": "https://github.com/LiquidSnake0/bully-re",
+      "fallback_repository": "https://github.com/morluto/rea",
+      "role": "Read target-specific prior art and current project workflow first; not automatic execution or permission to replace an existing project."
+    },
+    "bully-x360": {
+      "reference": "references/game-specialists.md#bully",
+      "primary_repository": "https://github.com/coole42-pixel/BullyRecomp",
+      "fallback_repository": "https://github.com/hedge-dev/XenonRecomp",
+      "role": "Read target-specific prior art and current project workflow first; not automatic execution or permission to replace an existing project."
+    },
+    "fnv": {
+      "reference": "references/game-specialists.md#new-vegas",
+      "primary_repository": "https://github.com/slaterain/nv-rs",
+      "fallback_repository": "https://github.com/morluto/rea",
+      "role": "Read target-specific prior art and current project workflow first; not automatic execution or permission to replace an existing project."
+    },
+    "ds1": {
+      "reference": "references/game-specialists.md#ds1-dsr-and-mw2",
+      "primary_repository": "https://github.com/rehan-remade/universal-modder",
+      "fallback_repository": "https://github.com/morluto/rea",
+      "role": "Read target-specific prior art and current project workflow first; not automatic execution or permission to replace an existing project."
+    },
+    "dsr": {
+      "reference": "references/game-specialists.md#ds1-dsr-and-mw2",
+      "primary_repository": "https://github.com/oh-ashen-one/dsr-mw2-crossover",
+      "fallback_repository": "https://github.com/rehan-remade/universal-modder",
+      "role": "Read target-specific prior art and current project workflow first; not automatic execution or permission to replace an existing project."
+    },
+    "mw2-2009": {
+      "reference": "references/game-specialists.md#ds1-dsr-and-mw2",
+      "primary_repository": "https://github.com/vladtrc/iw4L",
+      "fallback_repository": "https://github.com/rehan-remade/universal-modder",
+      "role": "Read target-specific prior art and current project workflow first; not automatic execution or permission to replace an existing project."
+    },
+    "faith-runner": {
+      "reference": "references/game-specialists.md#movement-and-combat",
+      "primary_repository": "https://github.com/tnrjns/faith-runner",
+      "fallback_repository": "https://github.com/rehan-remade/universal-modder",
+      "role": "Read target-specific prior art and current project workflow first; not automatic execution or permission to replace an existing project."
+    },
+    "elden-ring": {
+      "reference": "references/game-specialists.md#movement-and-combat",
+      "primary_repository": "https://github.com/Funny-Bones/ELDEN-RING-Combat-Rewrite",
+      "fallback_repository": "https://github.com/rehan-remade/universal-modder",
+      "role": "Read target-specific prior art and current project workflow first; not automatic execution or permission to replace an existing project."
+    },
+    "ps5": {
+      "reference": "references/game-specialists.md#ps5",
+      "primary_repository": "https://github.com/boykopovar/AnyPS5",
+      "fallback_repository": "https://github.com/ymatrix1/PortPS5",
+      "role": "Read target-specific prior art and current project workflow first; not automatic execution or permission to replace an existing project."
+    }
+  }
+}

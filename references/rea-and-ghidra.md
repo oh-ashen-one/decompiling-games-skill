@@ -1,6 +1,6 @@
-# Default toolchain: REA and Ghidra
+# Native default toolchain: REA and Ghidra
 
-Owner decision, **2026-10-25**: for any question that depends on a shipped game binary, use **REA** ([morluto/rea](https://github.com/morluto/rea), MIT) as the agent-facing analysis interface and **Ghidra** ([NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra), Apache-2.0) as the native analysis engine. Their own skills and documentation are more detailed than this one about tool mechanics, so follow them for that. This skill still governs scope, privacy, evidence and publication.
+Owner decision, **2026-10-25**, retained as the native default: use **REA** ([morluto/rea](https://github.com/morluto/rea), MIT) as the agent-facing analysis interface and **Ghidra** ([NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra), Apache-2.0) as the native analysis engine. The **2026-10-26** best-fit repository request adds [evidence-based routing](tool-routing.md) before this step: managed assemblies, IL2CPP metadata, JS/Electron, browser, firmware, WASM and protocol tasks get appropriate specialist tools. Their own pinned skills and documentation govern mechanics; this skill still governs scope, privacy, evidence and publication. REA is orchestration/evidence infrastructure, not a substitute native backend or original-source recovery tool.
 
 | Question | Authority |
 |---|---|

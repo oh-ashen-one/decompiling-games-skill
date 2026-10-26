@@ -1,0 +1,1151 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-26",
+  "audit_scope": "Primary documentation, links and license-surface review. No installations, binary execution, compatibility tests, or upstream code copying. URL equality means shared source, not equivalent resource semantics. Unresolved entries retained.",
+  "entries": [
+    {
+      "id": "01-01",
+      "section": "01",
+      "name": "Installation and agent setup",
+      "canonical_url": "https://github.com/morluto/rea/blob/main/docs/installation.md",
+      "license": "MIT; third-party notices",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Pinned setup/readiness; inspect changes; no installation performed."
+    },
+    {
+      "id": "01-02",
+      "section": "01",
+      "name": "Your first REA investigation",
+      "canonical_url": "https://rea.tools/first-investigation/",
+      "license": "REA terms; sample rights separate",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Six-file Notes tutorial; smoke test, not game validation."
+    },
+    {
+      "id": "01-03",
+      "section": "01",
+      "name": "REA guides",
+      "canonical_url": "https://rea.tools/guides/",
+      "license": "REA terms",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Index; choose target-specific guide."
+    },
+    {
+      "id": "01-04",
+      "section": "01",
+      "name": "Guided MCP prompts",
+      "canonical_url": "https://github.com/morluto/rea/blob/main/docs/mcp-prompts.md",
+      "license": "MIT repository terms",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Prompt templates do not execute tools or grant authority."
+    },
+    {
+      "id": "01-05",
+      "section": "01",
+      "name": "MCP runtime contracts",
+      "canonical_url": "https://github.com/morluto/rea/blob/main/docs/mcp-contracts.md",
+      "license": "MIT repository terms",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Evidence identity, sessions and provider/transport limits."
+    },
+    {
+      "id": "01-06",
+      "section": "01",
+      "name": "Evidence Workflows",
+      "canonical_url": "https://github.com/morluto/rea/blob/main/docs/cli.md",
+      "license": "MIT repository terms",
+      "kind": "guide",
+      "status": "unresolved-title",
+      "note": "Exact title unresolved; guessed docs/evidence-workflows.md was 404. CLI/contracts are verified replacements, not an invented original link."
+    },
+    {
+      "id": "01-07",
+      "section": "01",
+      "name": "Native Investigation Guide",
+      "canonical_url": "https://github.com/morluto/rea/blob/main/docs/native-investigation.md",
+      "license": "MIT repository terms",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Provider required; pseudocode/assembly are not original source."
+    },
+    {
+      "id": "01-08",
+      "section": "01",
+      "name": "JavaScript Application Graph",
+      "canonical_url": "https://github.com/morluto/rea/blob/main/docs/javascript-application-graph.md",
+      "license": "MIT repository terms",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Cross-layer provenance contract, not separate extractor."
+    },
+    {
+      "id": "01-09",
+      "section": "01",
+      "name": "Electron Observation Guide",
+      "canonical_url": "https://github.com/morluto/rea/blob/main/docs/electron-observation.md",
+      "license": "MIT repository terms",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Local CDP observation separate from static ASAR and active execution."
+    },
+    {
+      "id": "02-01",
+      "section": "02",
+      "name": "Notes Export",
+      "canonical_url": "https://rea.tools/first-investigation/",
+      "license": "REA terms; sample rights separate",
+      "kind": "example",
+      "status": "reachable",
+      "note": "Same tutorial as section 01 first investigation; duplicate canonical source.",
+      "same_source_as": "01-02"
+    },
+    {
+      "id": "02-02",
+      "section": "02",
+      "name": "Notion Clipboard",
+      "canonical_url": "https://rea.tools/showcase/notion/",
+      "license": "REA terms; app rights separate",
+      "kind": "example",
+      "status": "reachable",
+      "note": "JS/API/IPC clipboard tracing; no rights to app assets inferred."
+    },
+    {
+      "id": "02-03",
+      "section": "02",
+      "name": "DX-Ball",
+      "canonical_url": "https://rea.tools/showcase/dx-ball/",
+      "license": "REA terms; game rights separate",
+      "kind": "example",
+      "status": "reachable",
+      "note": "Sound-pan function/byte/behavior validation; not complete game recovery."
+    },
+    {
+      "id": "02-04",
+      "section": "02",
+      "name": "Aegis",
+      "canonical_url": "https://rea.tools/showcase/aegis/",
+      "license": "REA terms; sample rights separate",
+      "kind": "example",
+      "status": "reachable",
+      "note": "APK/TOTP case study; Android rather than native game route."
+    },
+    {
+      "id": "02-05",
+      "section": "02",
+      "name": "CTF Flag Checker",
+      "canonical_url": "https://rea.tools/showcase/ctf/",
+      "license": "REA terms; sample rights separate",
+      "kind": "example",
+      "status": "reachable",
+      "note": "Bounded training challenge, not production tool."
+    },
+    {
+      "id": "02-06",
+      "section": "02",
+      "name": "REA Gems",
+      "canonical_url": "https://github.com/sqwu/rea-gems",
+      "license": "MIT code; collected data respective authors",
+      "kind": "catalog",
+      "status": "reachable",
+      "note": "Community gallery, not REA core or independently tested results."
+    },
+    {
+      "id": "02-07",
+      "section": "02",
+      "name": "Chrome Dinosaur investigation",
+      "canonical_url": "https://rea.tools/examples/dino-lab/",
+      "license": "Chromium BSD; REA material separate",
+      "kind": "example",
+      "status": "reachable",
+      "note": "Browser speed-rule demo; not native recovery evidence."
+    },
+    {
+      "id": "02-08",
+      "section": "02",
+      "name": "Notes Evidence Record",
+      "canonical_url": "https://rea.tools/guides/javascript/",
+      "license": "REA terms",
+      "kind": "guide",
+      "status": "unresolved-artifact",
+      "note": "Verified REA 4.1.0 IPC excerpt; exact complete standalone record not found."
+    },
+    {
+      "id": "03-01",
+      "section": "03",
+      "name": "IDA Pro MCP",
+      "canonical_url": "https://github.com/mrexodia/ida-pro-mcp",
+      "license": "MIT wrapper; IDA Pro separately licensed",
+      "kind": "bridge",
+      "status": "reachable",
+      "note": "IDA Free unsupported. README recommends HexRaysSA/ida-mcp; official bridge needs compatible IDA/idalib/Python. Not an all-free path."
+    },
+    {
+      "id": "03-02",
+      "section": "03",
+      "name": "GhidrAssistMCP",
+      "canonical_url": "https://github.com/symgraph/GhidrAssistMCP",
+      "license": "MIT",
+      "kind": "bridge",
+      "status": "reachable",
+      "note": "Version-matched extension; audited README Ghidra 12.0/12.1 Public and Java25+. Verify installed release; no overlap with REA by default."
+    },
+    {
+      "id": "03-03",
+      "section": "03",
+      "name": "GhidraMCP",
+      "canonical_url": "https://github.com/LaurieWired/GhidraMCP",
+      "license": "Apache-2.0",
+      "kind": "bridge",
+      "status": "reachable",
+      "note": "Existing compatible Ghidra bridge fallback; local listener and GUI constraints."
+    },
+    {
+      "id": "03-04",
+      "section": "03",
+      "name": "Official radare2 MCP",
+      "canonical_url": "https://github.com/radareorg/radare2-mcp",
+      "license": "MIT bridge; radare2 separate",
+      "kind": "bridge",
+      "status": "reachable",
+      "note": "Best for established radare2 workflows; one bridge at a time."
+    },
+    {
+      "id": "03-05",
+      "section": "03",
+      "name": "Revenant",
+      "canonical_url": "https://github.com/DatanoiseTV/revenant",
+      "license": "Apache-2.0",
+      "kind": "tool",
+      "status": "identity-candidate",
+      "note": "Firmware context suggests this repo; name ambiguous. Do not auto-select until confirmed. Docker/model dependencies; external LLM cost possible."
+    },
+    {
+      "id": "03-06",
+      "section": "03",
+      "name": "Awesome LLM Reverse Engineering",
+      "canonical_url": "https://github.com/ram-elgov/awesome-llm-reverse-engineering",
+      "license": "MIT",
+      "kind": "catalog",
+      "status": "reachable",
+      "note": "Discovery only, not executable or certification."
+    },
+    {
+      "id": "03-07",
+      "section": "03",
+      "name": "AgentRE-Bench",
+      "canonical_url": "https://github.com/agentrebench/AgentRE-Bench",
+      "license": "MIT",
+      "kind": "benchmark",
+      "status": "reachable",
+      "note": "Fixed-task evaluation; model cost separate; not decompiler or game fidelity proof."
+    },
+    {
+      "id": "03-08",
+      "section": "03",
+      "name": "SRE-Bench",
+      "canonical_url": "https://sre-bench.lol/",
+      "license": "Dataset/access/license/price not established",
+      "kind": "benchmark",
+      "status": "reachable",
+      "note": "Official Columbia lab research benchmark; evaluate page says private programs run on their infrastructure. No private uploads by default."
+    },
+    {
+      "id": "03-09",
+      "section": "03",
+      "name": "Reverse Engineering Agent Skill",
+      "canonical_url": null,
+      "license": "Unresolved",
+      "kind": "guide",
+      "status": "unresolved-identity",
+      "note": "Generic name matches multiple skills; exact URL required; no silent substitution or installation."
+    },
+    {
+      "id": "04-01",
+      "section": "04",
+      "name": "Ghidra",
+      "canonical_url": "https://github.com/NationalSecurityAgency/ghidra",
+      "license": "Apache-2.0 plus notices",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Preferred native static analysis; Java/native loader and architecture compatibility required."
+    },
+    {
+      "id": "04-02",
+      "section": "04",
+      "name": "radare2",
+      "canonical_url": "https://github.com/radareorg/radare2",
+      "license": "Mainly LGPLv3; component licenses",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "CLI/r2pipe native fallback; pinned loaders and components."
+    },
+    {
+      "id": "04-03",
+      "section": "04",
+      "name": "Rizin",
+      "canonical_url": "https://github.com/rizinorg/rizin",
+      "license": "LGPL-3.0/GPL-3.0 components",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Alternative framework; plugins/commands not interchangeable with all r2 versions."
+    },
+    {
+      "id": "04-04",
+      "section": "04",
+      "name": "Cutter",
+      "canonical_url": "https://github.com/rizinorg/cutter",
+      "license": "GPL-3.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "GUI for Rizin, not current radare2 backend."
+    },
+    {
+      "id": "04-05",
+      "section": "04",
+      "name": "Keystone",
+      "canonical_url": "https://github.com/keystone-engine/keystone",
+      "license": "GPLv2-only with exceptions/commercial dual license",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Assembler for scoped patches, not decompiler; embedding terms need review."
+    },
+    {
+      "id": "04-06",
+      "section": "04",
+      "name": "GNU Binutils",
+      "canonical_url": "https://sourceware.org/binutils/",
+      "license": "GNU component licenses; exact inventory not audited",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Symbols/sections/disassembly triage; nm/readelf/objdump/strings version and target support."
+    },
+    {
+      "id": "04-07",
+      "section": "04",
+      "name": "GDB",
+      "canonical_url": "https://sourceware.org/gdb/",
+      "license": "GNU free software; distribution license inventory not audited",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Linux/GNU runtime debugger; attach/platform permission required."
+    },
+    {
+      "id": "04-08",
+      "section": "04",
+      "name": "LLDB",
+      "canonical_url": "https://lldb.llvm.org/",
+      "license": "Apache-2.0 WITH LLVM-exception; legacy portions possible",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "macOS/LLVM debugger; no signing or attach-control bypass."
+    },
+    {
+      "id": "04-09",
+      "section": "04",
+      "name": "pwntools",
+      "canonical_url": "https://github.com/Gallopsled/pwntools",
+      "license": "Mostly MIT; GPL/BSD components",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Optional authorized ELF/process/CTF automation, not game default."
+    },
+    {
+      "id": "04-10",
+      "section": "04",
+      "name": "ROPgadget",
+      "canonical_url": "https://github.com/JonathanSalwan/ROPgadget",
+      "license": "BSD license/source headers",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Gadget search only for scoped security/CTF questions, not ordinary modding."
+    },
+    {
+      "id": "04-11",
+      "section": "04",
+      "name": "Detect It Easy",
+      "canonical_url": "https://github.com/horsicq/Detect-It-Easy",
+      "license": "MIT",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Compiler/packer/file triage; signatures are clues, not behavior proof."
+    },
+    {
+      "id": "04-12",
+      "section": "04",
+      "name": "capa",
+      "canonical_url": "https://github.com/mandiant/capa",
+      "license": "Apache-2.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Capability-pattern triage, not semantic recovery."
+    },
+    {
+      "id": "04-13",
+      "section": "04",
+      "name": "YARA",
+      "canonical_url": "https://github.com/VirusTotal/yara",
+      "license": "BSD-3-Clause",
+      "kind": "tool",
+      "status": "maintenance",
+      "note": "Upstream points to YARA-X; retain for existing rules, review successor for new integration."
+    },
+    {
+      "id": "05-01",
+      "section": "05",
+      "name": "ILSpy",
+      "canonical_url": "https://github.com/icsharpcode/ILSpy",
+      "license": "MIT plus third-party notices",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Read-only managed decompilation; CLI on supported non-Windows hosts; not NativeAOT recovery."
+    },
+    {
+      "id": "05-02",
+      "section": "05",
+      "name": "dnSpyEx",
+      "canonical_url": "https://github.com/dnSpyEx/dnSpy",
+      "license": "GPL-3.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Windows managed/Unity debugging or editing when scoped; otherwise ILSpy."
+    },
+    {
+      "id": "05-03",
+      "section": "05",
+      "name": "dnlib",
+      "canonical_url": "https://github.com/0xd4d/dnlib",
+      "license": "MIT",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Managed reader/writer; one fitting transformation library, not redundant stacks."
+    },
+    {
+      "id": "05-04",
+      "section": "05",
+      "name": "de4dot",
+      "canonical_url": "https://github.com/de4dot/de4dot",
+      "license": "GPLv3 plus notices",
+      "kind": "tool",
+      "status": "archived",
+      "note": "Legacy supported-obfuscator fallback; removed names usually unrecoverable."
+    },
+    {
+      "id": "05-05",
+      "section": "05",
+      "name": "AsmResolver",
+      "canonical_url": "https://github.com/Washi1337/AsmResolver",
+      "license": "MIT",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Custom PE layout and .NET metadata transformation, not GUI decompiler."
+    },
+    {
+      "id": "05-06",
+      "section": "05",
+      "name": "Harmony",
+      "canonical_url": "https://github.com/pardeike/Harmony",
+      "license": "MIT",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Reversible scoped managed/Mono patches; verify 2.x/3.x branch; not plain IL2CPP patch compatibility."
+    },
+    {
+      "id": "05-07",
+      "section": "05",
+      "name": "Mono.Cecil",
+      "canonical_url": "https://github.com/jbevain/cecil",
+      "license": "MIT",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Managed inspection/rewriting; prefer established pipeline when fit."
+    },
+    {
+      "id": "05-08",
+      "section": "05",
+      "name": "NativeAOT reversing helpers",
+      "canonical_url": "https://github.com/Washi1337/ghidra-nativeaot",
+      "license": "MIT",
+      "kind": "tool",
+      "status": "identity-candidate",
+      "note": "Reasonable category resolution, not proven original intended link. Ghidra helper .NET8+ AOT; no original C# guarantee."
+    },
+    {
+      "id": "06-01",
+      "section": "06",
+      "name": "Frida iOS Guide",
+      "canonical_url": "https://frida.re/docs/ios/",
+      "license": "wxWindows Library Licence 3.1",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Runtime tracing needs supported jailbroken or signed Gadget mode; no source recovery or bypass."
+    },
+    {
+      "id": "06-02",
+      "section": "06",
+      "name": "OWASP MASTG",
+      "canonical_url": "https://mas.owasp.org/MASTG/",
+      "license": "Conflicting notices: website CC-BY-4.0; repo License.md CC-BY-SA-4.0",
+      "kind": "guide",
+      "status": "license-conflict",
+      "note": "Link and independently summarize. Exact source/version license must be resolved before copying; do not invent a code/docs split."
+    },
+    {
+      "id": "06-03",
+      "section": "06",
+      "name": "DVIA-v2",
+      "canonical_url": "https://github.com/prateek147/DVIA-v2",
+      "license": "MIT",
+      "kind": "example",
+      "status": "reachable",
+      "note": "Training fixture, README tested through iOS11; signing may need paid developer account."
+    },
+    {
+      "id": "06-04",
+      "section": "06",
+      "name": "libimobiledevice",
+      "canonical_url": "https://github.com/libimobiledevice/libimobiledevice",
+      "license": "LGPL-2.1",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Pairing/device diagnostics, not decompiler or arbitrary sandbox access."
+    },
+    {
+      "id": "06-05",
+      "section": "06",
+      "name": "ios-deploy",
+      "canonical_url": "https://github.com/ios-control/ios-deploy",
+      "license": "GPL-3.0",
+      "kind": "tool",
+      "status": "legacy",
+      "note": "README pre-iOS17; modern Apple device CLI preferred. Xcode/signing prerequisites."
+    },
+    {
+      "id": "06-06",
+      "section": "06",
+      "name": "class-dump",
+      "canonical_url": "https://github.com/nygard/class-dump",
+      "license": "GPL-2.0-or-later",
+      "kind": "tool",
+      "status": "legacy",
+      "note": "Objective-C declarations only; not Swift or method implementations."
+    },
+    {
+      "id": "06-07",
+      "section": "06",
+      "name": "ipsw",
+      "canonical_url": "https://github.com/blacktop/ipsw",
+      "license": "MIT",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Preferred Apple IPSW/OTA/dyld/kernelcache inspection; firmware rights separate."
+    },
+    {
+      "id": "06-08",
+      "section": "06",
+      "name": "Objection",
+      "canonical_url": "https://github.com/sensepost/objection",
+      "license": "GPL-3.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Frida-based authorized mobile runtime exploration; signing/version gate."
+    },
+    {
+      "id": "07-01",
+      "section": "07",
+      "name": "Electron ASAR",
+      "canonical_url": "https://github.com/electron/asar",
+      "license": "MIT",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "List/extract, Node>=22.12 in audited README; not decryptor. Native addons use native route."
+    },
+    {
+      "id": "07-02",
+      "section": "07",
+      "name": "Electron Process Model",
+      "canonical_url": "https://www.electronjs.org/docs/latest/tutorial/process-model",
+      "license": "Electron MIT; docs notices apply",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Renderer/preload/IPC/main mapping; not executable."
+    },
+    {
+      "id": "07-03",
+      "section": "07",
+      "name": "Source Map Explorer",
+      "canonical_url": "https://github.com/danvk/source-map-explorer",
+      "license": "Apache-2.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Matching maps needed for bundle attribution/treemap; no missing-source recovery. Activity not checked."
+    },
+    {
+      "id": "07-04",
+      "section": "07",
+      "name": "AST Explorer",
+      "canonical_url": "https://github.com/fkling/astexplorer",
+      "license": "License unresolved",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Local interactive parser choice; do not upload proprietary code or vendor until license reviewed. Activity not checked."
+    },
+    {
+      "id": "07-05",
+      "section": "07",
+      "name": "Babel Parser",
+      "canonical_url": "https://babeljs.io/docs/babel-parser",
+      "license": "MIT via babel/babel",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Modern JS/JSX/TS with correct plugins; not semantic deobfuscation. Activity not checked."
+    },
+    {
+      "id": "07-06",
+      "section": "07",
+      "name": "Electron Security Guide",
+      "canonical_url": "https://www.electronjs.org/docs/latest/tutorial/security",
+      "license": "Electron MIT; docs notices apply",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Preserve contextIsolation/sandbox/IPC security during reproduction."
+    },
+    {
+      "id": "07-07",
+      "section": "07",
+      "name": "source-map",
+      "canonical_url": "https://github.com/mozilla/source-map",
+      "license": "BSD-style inspected; API NOASSERTION",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Consume existing maps; sourcesContent may be missing; exact license review before embedding."
+    },
+    {
+      "id": "07-08",
+      "section": "07",
+      "name": "Esprima",
+      "canonical_url": "https://github.com/jquery/esprima",
+      "license": "BSD-2-Clause",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Supported ESTree/ECMAScript fallback; README ES2019, modern syntax needs compatibility check."
+    },
+    {
+      "id": "07-09",
+      "section": "07",
+      "name": "Acorn",
+      "canonical_url": "https://github.com/acornjs/acorn",
+      "license": "MIT",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Lightweight parser/walker; loose recovery inferred nodes must be marked."
+    },
+    {
+      "id": "07-10",
+      "section": "07",
+      "name": "JS Beautifier",
+      "canonical_url": "https://github.com/beautifier/js-beautify",
+      "license": "MIT",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Formatting only, not decompilation or semantic deobfuscation."
+    },
+    {
+      "id": "08-01",
+      "section": "08",
+      "name": "Chrome DevTools Protocol",
+      "canonical_url": "https://chromedevtools.github.io/devtools-protocol/",
+      "license": "BSD-3-Clause repository",
+      "kind": "protocol",
+      "status": "reachable",
+      "note": "Browser/protocol version matching; privileged debug endpoint stays local."
+    },
+    {
+      "id": "08-02",
+      "section": "08",
+      "name": "Chrome DevTools",
+      "canonical_url": "https://developer.chrome.com/docs/devtools/",
+      "license": "Free built-in; documentation terms separate",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Owned browser sources/network/performance inspection; HAR may contain secrets."
+    },
+    {
+      "id": "08-03",
+      "section": "08",
+      "name": "Puppeteer",
+      "canonical_url": "https://github.com/puppeteer/puppeteer",
+      "license": "Apache-2.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Chrome/Firefox CDP/BiDi; existing integration/CDP-heavy workflow; normal install downloads browser."
+    },
+    {
+      "id": "08-04",
+      "section": "08",
+      "name": "Playwright",
+      "canonical_url": "https://github.com/microsoft/playwright",
+      "license": "Apache-2.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Repeatable cross-browser evidence with isolated authorized profile; no access-control bypass."
+    },
+    {
+      "id": "08-05",
+      "section": "08",
+      "name": "OWASP ZAP",
+      "canonical_url": "https://github.com/zaproxy/zaproxy",
+      "license": "Apache-2.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Optional passive proxy; active scans separately scoped, never automatic fallback."
+    },
+    {
+      "id": "08-06",
+      "section": "08",
+      "name": "HTTP Toolkit",
+      "canonical_url": "https://github.com/httptoolkit/httptoolkit",
+      "license": "AGPL with Apache/MIT components; free Hobbyist/paid Pro",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Traffic debugging; HAR export/automated mocking Pro in checked pricing, not all-free."
+    },
+    {
+      "id": "08-07",
+      "section": "08",
+      "name": "WebSocket King",
+      "canonical_url": "https://websocketking.com/",
+      "license": "License unresolved; official tomlerendu/Websocket-King",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Manual WS client; hosted UI not default for secrets; no vendoring before license review."
+    },
+    {
+      "id": "08-08",
+      "section": "08",
+      "name": "Firefox DevTools",
+      "canonical_url": "https://firefox-source-docs.mozilla.org/devtools/",
+      "license": "Free built-in; exact code/docs licenses not inspected",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Firefox manual fallback; use linked user docs, not contributor architecture as usage instructions."
+    },
+    {
+      "id": "08-09",
+      "section": "08",
+      "name": "HAR Specification",
+      "canonical_url": "https://www.softwareishard.com/blog/har-12-spec/",
+      "license": "Reuse license unresolved",
+      "kind": "protocol",
+      "status": "partial-fetch",
+      "note": "HAR1.2 frozen; indexed primary page fetch timed out. Evidence format only; redact auth/cookies/body, no automatic replay."
+    },
+    {
+      "id": "09-01",
+      "section": "09",
+      "name": "Binwalk",
+      "canonical_url": "https://github.com/ReFirmLabs/binwalk",
+      "license": "MIT",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Rust v3 signature/entropy triage; entropy not proof; extraction helpers isolated."
+    },
+    {
+      "id": "09-02",
+      "section": "09",
+      "name": "EMBA",
+      "canonical_url": "https://github.com/e-m-b-a/emba",
+      "license": "GPL-3.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Heavy broader firmware security analysis; isolated inputs/dependencies; not one-function default."
+    },
+    {
+      "id": "09-03",
+      "section": "09",
+      "name": "FACT Core",
+      "canonical_url": "https://github.com/fkie-cad/FACT_core",
+      "license": "GPL-3.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Maintained research prototype for searchable comparable corpus/API; heavy services, activity date not checked."
+    },
+    {
+      "id": "09-04",
+      "section": "09",
+      "name": "FirmAE",
+      "canonical_url": "https://github.com/pr0v3rbs/FirmAE",
+      "license": "MIT",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Compatible Linux IoT emulation; README Ubuntu20.04; privileged tooling/debug services isolated. No universal success claim."
+    },
+    {
+      "id": "09-05",
+      "section": "09",
+      "name": "sasquatch",
+      "canonical_url": "https://github.com/devttys0/sasquatch",
+      "license": "Wrapper license unresolved; squashfs-tools patches separate",
+      "kind": "tool",
+      "status": "legacy",
+      "note": "Very beta, patches 4.3; modified SquashFS fallback after standard unsquashfs fails; C/compression deps."
+    },
+    {
+      "id": "09-06",
+      "section": "09",
+      "name": "ubi_reader",
+      "canonical_url": "https://github.com/onekey-sec/ubi_reader",
+      "license": "GPL-3.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "UBI/UBIFS extraction; no journal replay, NAND ECC limitations; report incompleteness."
+    },
+    {
+      "id": "09-07",
+      "section": "09",
+      "name": "Jefferson",
+      "canonical_url": "https://github.com/onekey-sec/jefferson",
+      "license": "MIT",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "JFFS2 extraction; endian/compression checks; only hdr_crc enforced per README, independently validate output."
+    },
+    {
+      "id": "09-08",
+      "section": "09",
+      "name": "Firmware Mod Kit",
+      "canonical_url": "https://github.com/rampageX/firmware-mod-kit",
+      "license": "Mixed bundled licenses; aggregate unresolved",
+      "kind": "tool",
+      "status": "legacy",
+      "note": "Extraction/repack reference only; brick warning; prefer format-specific extraction, no automatic flashing."
+    },
+    {
+      "id": "09-09",
+      "section": "09",
+      "name": "Firmware Analysis Toolkit",
+      "canonical_url": "https://github.com/attify/firmware-analysis-toolkit",
+      "license": "FSL-1.1-ALv2; source-available with restrictions",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Current suite not assumed old Firmadyne wrapper. Internal CLI use and competing product limits need exact license review; not blanket OSS."
+    },
+    {
+      "id": "09-10",
+      "section": "09",
+      "name": "Revenant",
+      "canonical_url": "https://github.com/DatanoiseTV/revenant",
+      "license": "Apache-2.0",
+      "kind": "tool",
+      "status": "identity-candidate",
+      "note": "Duplicate section03 candidate; identity inferred, disabled until confirmed; Docker/LLM dependencies and output need testing.",
+      "same_source_as": "03-05"
+    },
+    {
+      "id": "10-01",
+      "section": "10",
+      "name": "WABT",
+      "canonical_url": "https://github.com/WebAssembly/wabt",
+      "license": "Apache-2.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Core-module wasm2wat/objdump/validate; prebuilt or C++/CMake; feature support gate."
+    },
+    {
+      "id": "10-02",
+      "section": "10",
+      "name": "Binaryen",
+      "canonical_url": "https://github.com/WebAssembly/binaryen",
+      "license": "Apache-2.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Optimizer/compiler IR; rewrite only after originals/equivalence tests; not source recovery."
+    },
+    {
+      "id": "10-03",
+      "section": "10",
+      "name": "wasm-tools",
+      "canonical_url": "https://github.com/bytecodealliance/wasm-tools",
+      "license": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Module/component parse/print/validate; Rust or prebuilt; feature matching."
+    },
+    {
+      "id": "10-04",
+      "section": "10",
+      "name": "Wasmtime",
+      "canonical_url": "https://github.com/bytecodealliance/wasmtime",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Optional controlled execution; version-specific WASI/imports, limits and no ambient filesystem/network."
+    },
+    {
+      "id": "10-05",
+      "section": "10",
+      "name": "Wasmer",
+      "canonical_url": "https://github.com/wasmerio/wasmer",
+      "license": "MIT core; hosted services separate",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Runtime only for verified ABI/WASIX/backend fit; not decompiler or universal import fallback."
+    },
+    {
+      "id": "10-06",
+      "section": "10",
+      "name": "wasm-decompile",
+      "canonical_url": "https://github.com/WebAssembly/wabt/pull/2769",
+      "license": "Former Apache-2.0 WABT component",
+      "kind": "command",
+      "status": "removed",
+      "note": "Removed upstream 2026-06-22 as unmaintained. Never auto-select/install; use WAT evidence/manual reconstruction."
+    },
+    {
+      "id": "10-07",
+      "section": "10",
+      "name": "wasm2c",
+      "canonical_url": "https://github.com/WebAssembly/wabt",
+      "license": "Apache-2.0; WABT component",
+      "kind": "command",
+      "status": "reachable",
+      "note": "Same repository as WABT; C/header translation needs matching support/runtime/compiler; not original names/types/source.",
+      "same_source_as": "10-01"
+    },
+    {
+      "id": "11-01",
+      "section": "11",
+      "name": "Wireshark",
+      "canonical_url": "https://gitlab.com/wireshark/wireshark",
+      "license": "GPL; inspect distribution components",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Offline Wireshark/TShark PCAP/PCAPNG; disable name resolution; capture libraries only under capture scope."
+    },
+    {
+      "id": "11-02",
+      "section": "11",
+      "name": "Scapy",
+      "canonical_url": "https://github.com/secdev/scapy",
+      "license": "GPL-2.0",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Python packet parsing/crafting; docs Python3.9+, platform deps/Npcap; offline default, sending/sniffing gated."
+    },
+    {
+      "id": "11-03",
+      "section": "11",
+      "name": "Zeek",
+      "canonical_url": "https://github.com/zeek/zeek",
+      "license": "BSD",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Batch PCAP event/flow logs; supported package/build deps; not byte-level decompiler."
+    },
+    {
+      "id": "11-04",
+      "section": "11",
+      "name": "Boofuzz",
+      "canonical_url": "https://github.com/jtpereyda/boofuzz",
+      "license": "GPL-2.0",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Active fuzzing specialist; Python>=3.8, isolated target/reset/monitor/corpus/bounds and permission required."
+    },
+    {
+      "id": "11-05",
+      "section": "11",
+      "name": "tcpdump",
+      "canonical_url": "https://github.com/the-tcpdump-group/tcpdump",
+      "license": "BSD-3-Clause",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "CLI PCAP read/acquisition; libpcap; capture separately scoped; fallback not rich TShark decoding."
+    },
+    {
+      "id": "11-06",
+      "section": "11",
+      "name": "PcapPlusPlus",
+      "canonical_url": "https://github.com/seladb/PcapPlusPlus",
+      "license": "Unlicense core; capture backends separate",
+      "kind": "library",
+      "status": "reachable",
+      "note": "C++ integration/CMake and backend deps; Npcap redistribution terms may differ."
+    },
+    {
+      "id": "11-07",
+      "section": "11",
+      "name": "Construct",
+      "canonical_url": "https://github.com/construct/construct",
+      "license": "MIT",
+      "kind": "library",
+      "status": "reachable",
+      "note": "Python>=3.8 declarative binary schemas after inference; round-trip/bounds tests; no network needed."
+    },
+    {
+      "id": "11-08",
+      "section": "11",
+      "name": "Netzob",
+      "canonical_url": "https://github.com/netzob/netzob",
+      "license": "GPLv3 code; CC-BY-SA docs",
+      "kind": "tool",
+      "status": "reachable",
+      "note": "Optional protocol inference; Python>=3.8/native/libpcap/libffi/graph deps untested; generation/fuzzing separately gated."
+    },
+    {
+      "id": "11-09",
+      "section": "11",
+      "name": "Wireshark Display Filters",
+      "canonical_url": "https://www.wireshark.org/docs/dfref/",
+      "license": "Documentation license not separately checked",
+      "kind": "guide",
+      "status": "reachable",
+      "note": "Lookup only, installed fields/version matter; display filters differ from capture/BPF filters."
+    },
+    {
+      "id": "12-01",
+      "section": "12",
+      "name": "OST2 x86-64 Assembly",
+      "canonical_url": "https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2%2BArch1001_x86-64_Asm%2B2021_v1/about",
+      "license": "100% free access; reuse license not established",
+      "kind": "course",
+      "status": "reachable",
+      "note": "Preferred assembly learning; C prerequisite; registration for progress."
+    },
+    {
+      "id": "12-02",
+      "section": "12",
+      "name": "pwn.college CSE365",
+      "canonical_url": "https://pwn.college/cse365-s2026/module-5/",
+      "license": "Public materials; reuse terms not verified",
+      "kind": "course",
+      "status": "reachable",
+      "note": "Truncated reference resolved to Spring2026 Module5/cIMG; hosted challenges may require login."
+    },
+    {
+      "id": "12-03",
+      "section": "12",
+      "name": "pwn.college Reversing Hell",
+      "canonical_url": "https://pwn.college/reversing-hell/",
+      "license": "Public materials; reuse terms not verified",
+      "kind": "course",
+      "status": "reachable",
+      "note": "Current page CSE598 Rev&PA Fall2025; advanced RE/program analysis training only."
+    },
+    {
+      "id": "12-04",
+      "section": "12",
+      "name": "Malware Unicorn RE101",
+      "canonical_url": "https://malwareunicorn.org/workshops/re101.html",
+      "license": "No reuse license found",
+      "kind": "course",
+      "status": "reachable",
+      "note": "Windows/x86 malware RE foundations; isolated lab; no automatic sample download."
+    },
+    {
+      "id": "12-05",
+      "section": "12",
+      "name": "RPISEC Modern Binary Exploitation",
+      "canonical_url": "https://github.com/RPISEC/MBE",
+      "license": "Code BSD-2-Clause; slides CC-BY-NC-4.0",
+      "kind": "course",
+      "status": "legacy",
+      "note": "Spring2015 Linux exploitation/RE curriculum; old lab; commercial slide reuse not permitted by NC terms."
+    },
+    {
+      "id": "12-06",
+      "section": "12",
+      "name": "UMass Reverse Engineering",
+      "canonical_url": null,
+      "license": "Identity/free materials/license unresolved",
+      "kind": "course",
+      "status": "unresolved-identity",
+      "note": "Amherst and Lowell COMP5660 both plausible; require exact source, no guessed course/enrollment."
+    },
+    {
+      "id": "12-07",
+      "section": "12",
+      "name": "OST Intro x86",
+      "canonical_url": "https://www.opensecuritytraining.info/IntroX86.html",
+      "license": "CC-BY-SA-3.0",
+      "kind": "course",
+      "status": "legacy",
+      "note": "Historical 32-bit x86; recommends OST2; C prerequisite and old lab toolchains."
+    },
+    {
+      "id": "12-08",
+      "section": "12",
+      "name": "crackmes.one",
+      "canonical_url": "https://crackmes.one/",
+      "license": "Per-submission licenses unverified",
+      "kind": "course",
+      "status": "reachable",
+      "note": "Purpose-built practice; untrusted community binaries isolated offline; never game asset/code source."
+    },
+    {
+      "id": "12-09",
+      "section": "12",
+      "name": "Microcorruption",
+      "canonical_url": "https://microcorruption.com/",
+      "license": "Offering/access/license not fully verified",
+      "kind": "course",
+      "status": "partial-fetch",
+      "note": "Canonical domain responds, no extractable body; manual educational lead only."
+    },
+    {
+      "id": "12-10",
+      "section": "12",
+      "name": "Flare-On",
+      "canonical_url": "https://flare-on.com/",
+      "license": "Reuse license unspecified",
+      "kind": "course",
+      "status": "reachable",
+      "note": "Official page past-tense contest2014-2026 with archives; untrusted practice binaries, no auto-run."
+    },
+    {
+      "id": "12-11",
+      "section": "12",
+      "name": "Malware Traffic Analysis",
+      "canonical_url": "https://www.malware-traffic-analysis.net/",
+      "license": "Reuse license unverified",
+      "kind": "course",
+      "status": "reachable",
+      "note": "Author warns samples/some PCAPs contain malware; isolated training only, no automatic corpus fetch."
+    },
+    {
+      "id": "12-12",
+      "section": "12",
+      "name": "OWASP MASTG",
+      "canonical_url": "https://mas.owasp.org/MASTG/",
+      "license": "Conflicting website CC-BY-4.0/repository CC-BY-SA-4.0",
+      "kind": "guide",
+      "status": "license-conflict",
+      "note": "Duplicate section06; methodology only; resolve exact source/license before copying.",
+      "same_source_as": "06-02"
+    },
+    {
+      "id": "12-13",
+      "section": "12",
+      "name": "OverTheWire",
+      "canonical_url": "https://overthewire.org/wargames/",
+      "license": "Host rules apply; reuse license unverified",
+      "kind": "course",
+      "status": "reachable",
+      "note": "Training path; SSH/login may be needed, only provider-authorized exercises."
+    },
+    {
+      "id": "12-14",
+      "section": "12",
+      "name": "PicoCTF",
+      "canonical_url": "https://picoctf.org/",
+      "license": "Free platform; reuse license unverified",
+      "kind": "course",
+      "status": "reachable",
+      "note": "Official landing redirects learners to cylabacademy.org; no stale challenge endpoints or inferred code license."
+    }
+  ]
+}

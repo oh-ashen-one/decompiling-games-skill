@@ -10,7 +10,7 @@ All sources here are **methodology references or tool candidates**, not bundled 
 
 ## Starting shortlist
 
-**Adopted defaults (owner decision, 2026-10-25):** REA as the analysis interface and Ghidra as its native engine; see [REA and Ghidra](rea-and-ghidra.md). The other entries remain alternatives and research leads.
+**Adopted native defaults (owner decision, 2026-10-25):** REA as the analysis interface and Ghidra as its native engine; see [REA and Ghidra](rea-and-ghidra.md). The 2026-10-26 [best-fit router](tool-routing.md) selects specialist tools first when runtime/task evidence requires them. The [new audited toolkit index](resource-catalog.md) supplements this historical game/creator catalog; its preserved star counts are not routing inputs. The other entries remain alternatives and research leads.
 
 For a PC Scholarship Edition investigation, begin with a local Ghidra project, REA as the validated analysis interface and, when authorized, x32dbg or controlled instrumentation. LEGO Island and DX-Ball offer useful x86/MSVC comparison methods; bully-re supplies target-specific leads. Check each against the exact executable. Adding multiple AI bridges at once makes failures and disclosure boundaries harder to diagnose.
 

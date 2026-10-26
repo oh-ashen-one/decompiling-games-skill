@@ -6,7 +6,7 @@ This repository contains original guidance and synthetic examples. It contains n
 
 ## Start here
 
-Read [SKILL.md](SKILL.md), then select a route in the [decision guide](references/decision-guide.md). For Bully, use the [edition-specific workflow](references/bully-workflow.md). The default example is **PC Scholarship Edition binary analysis and behavioral reimplementation**; the optional Xbox 360 static-recompilation route requires a different, compatible input.
+Read the compact [SKILL.md](SKILL.md), then only the matching domain/game reference. Catalogs and audit reports are optional lookups; linked files are not includes. Use the [decision guide](references/decision-guide.md) when the reconstruction type is unclear. For Bully, use the [edition-specific workflow](references/bully-workflow.md). The default example is **PC Scholarship Edition binary analysis and behavioral reimplementation**; the optional Xbox 360 static-recompilation route requires a different, compatible input.
 
 To use with an agent, provide the repository and ask it to follow `SKILL.md`. For example:
 
@@ -18,15 +18,25 @@ Follow your agent client's documented skill-folder setup if you want persistent 
 
 | Guide | Purpose |
 |---|---|
+| [Automatic best-fit routing](references/tool-routing.md) | Evidence-first primary/fallback selection, offline router and actual-tool adoption checks |
+| [Audited toolkit catalog](references/resource-catalog.md) | 114 named mentions across all 12 supplied sections; canonical sources, duplicates, ambiguity and license limits |
+| [Game specialists](references/game-specialists.md) | Retain Bully, Unity, FNV, DS1/DSR × MW2, movement/combat and PS5 routes |
 | [Decision guide](references/decision-guide.md) | Choose matching decompilation, reimplementation, static recompilation, or asset conversion |
 | [Bully workflow](references/bully-workflow.md) | Fingerprint the correct edition, map engine evidence, and validate one slice |
-| [REA and Ghidra](references/rea-and-ghidra.md) | Default toolchain: when to use REA or Ghidra, pinned setup, approvals and the cloud boundary |
+| [REA and Ghidra](references/rea-and-ghidra.md) | Native default toolchain: when to use REA or Ghidra, pinned setup, approvals and the cloud boundary |
 | [Local and cloud models](references/local-cloud.md) | Bound context, protect private inputs, and measure model usefulness |
 | [Creator methods and credits](references/creator-methods.md) | Separate IW4L, Chasm, SK8 and recompilation contributions |
 | [Source and license catalog](references/source-catalog.md) | Dated primary-source references, roles and reuse boundaries |
 | [Validation](references/validation.md) | Differential evidence, publication review and honest progress reporting |
 
 ## Try the synthetic comparison
+
+The offline routing example uses synthetic evidence and tool records; it does not inspect a real target, install software or execute any selected tool:
+
+```sh
+python3 -B scripts/route_tools.py examples/routing/native-pe.json
+python3 -B -m unittest discover -s tests -p 'test_*.py'
+```
 
 With an existing Python 3 installation, run:
 

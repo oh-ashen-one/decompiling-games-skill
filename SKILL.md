@@ -5,36 +5,35 @@ description: Plan and validate authorized game binary analysis, matching decompi
 
 # Decompiling games
 
-Turn a game-reconstruction request into a target-specific, testable research plan. Distinguish what the binary proves, what observations suggest, and what remains unknown. This skill supplies a method; it does not recover a complete game automatically.
+Use this for authorized analysis or reconstruction of an existing game, not ordinary game creation. Preserve working project-specific SDK/loader workflows and other sessions' files, engines and jobs.
 
-## Establish the target
+## Load only what this task needs
 
-1. Determine the requested outcome using [the decision guide](references/decision-guide.md): analysis, matching decompilation, behavioral reimplementation, static recompilation, or asset conversion. A native executable is an output, not proof of any particular reconstruction method.
-2. Record edition, platform, region, patch/title update, executable hash, architecture, endianness, pointer width, ABI and image base before using addresses or choosing a translator. Inspect headers rather than inferring the target architecture from the host computer.
-3. Check the available tools and authorized input files. Preserve the original installation. Work in a task-owned directory and branch; leave other sessions, engines, terminals and model servers alone.
-4. For Bully, read [the Bully workflow](references/bully-workflow.md). PC Scholarship Edition and Xbox 360 Scholarship Edition require separate analysis profiles. Do not substitute one for the other.
+This is the entrypoint, not a request to read the library. **Do not preload catalogs, audit reports, the JSON decision table or every linked file.** A link is a lookup destination, not an include. Select one relevant domain below, then read only its needed upstream docs. Retain already-read guidance within the task; do not reread unchanged files each turn.
 
-## Research and evidence
+1. Establish the requested output, exact edition/build/hash, parsed format/platform/architecture and engine/runtime evidence, actual host, available tools/licenses, authorized operations and disclosure scope. Never infer platform from filename or host. Stop at conflicting/unknown evidence.
+2. Preserve a suitable established project workflow. Otherwise select one primary and a justified fallback from the relevant route below. Before using it, inspect version-matched upstream docs/license/dependencies and invoke the installed supported tool for the smallest authorized question. Missing prerequisites do not authorize installs. Keep one MCP/interface by default.
+3. Use the optional offline `scripts/route_tools.py <manifest.json>` for a deterministic check; it prints only the selected route. Its JSON table is read by Python, not pasted into model context. Read [manifest instructions](references/routing-manifest.md) only when preparing that input.
 
-- Start with primary sources and pinned revisions. Use [the dated source catalog](references/source-catalog.md) for leads, then check current documentation, license files and per-file exceptions before reuse. Stars measure attention, not correctness.
-- Keep proprietary binaries, assets, generated game code, raw decompiler output, database exports and memory dumps local and outside the public repository. Do not use leaked source. Credit does not confer permission to copy.
-- Default toolchain: when a claim depends on a shipped binary, use REA over MCP with the Ghidra provider, plus headless Ghidra for whole-program analysis, batch exports and persistent annotation. Load stronger well-known skills where they exist: REA's bundled `reverse-engineer-anything` for REA, `ghidra-iterative-re` for iterative Ghidra annotation, and Ghidra's own docs for mechanics. This skill governs scope, privacy and validation. Read [REA and Ghidra](references/rea-and-ghidra.md) for when to use which, pinned installation, approvals and the cloud boundary. Skip both when decompiled scripts or decoded formats already answer the question.
-- Analyze once and cache by target hash, tool version, loader and analysis options. Query a local index for relevant functions, callers, strings, types and data references instead of sending a whole program to a model.
-- Attach provenance and uncertainty to each inference. A decompiler's inferred type or an AI-generated name is a hypothesis until supported by layout, calls or observed behavior.
-- For ideas drawn from IW4L and Skate work, use [the attributed methods reference](references/creator-methods.md). Do not copy unlicensed implementations or describe procedural agent separation as guaranteed clean-room isolation.
+| Target/task evidence | Read only this route |
+|---|---|
+| Native PE/ELF/Mach-O | [Native](references/routes/native.md) |
+| .NET, Unity Mono/IL2CPP or NativeAOT | [Managed/native runtime distinction](references/routes/managed.md) |
+| Electron or JavaScript source | [JavaScript](references/routes/javascript.md) |
+| Browser behavior | [Browser](references/routes/browser.md) |
+| Firmware or Apple/mobile artifacts | [Firmware/mobile](references/routes/firmware.md) |
+| WebAssembly | [WASM](references/routes/wasm.md) |
+| Recorded traffic or binary protocols | [Protocols](references/routes/protocol.md) |
+| Runtime observation, patching, capture or fuzzing | [Runtime scope](references/routes/runtime.md) |
+| Learning only | [Education](references/routes/education.md) |
+| Bully/FNV/DS1/DSR/MW2, movement/combat or PS5 | [Game index](references/game-specialists.md), then only the matching game |
 
-## Recover one verifiable slice
+## Look up sources when needed
 
-1. Select a small behavior with observable inputs and outputs: a file-header parser, handle lookup, coordinate transform, Lua binding or bounded state transition.
-2. Write its contract before implementation: widths and signedness, outputs, side effects, lifetime, state ordering, invalid-input handling, numerical rules and unresolved questions.
-3. Follow [the local/cloud workflow](references/local-cloud.md). Route private binary-derived context locally by default. Cloud models receive public references, suitable independently written specifications, synthetic fixtures and original implementation. Sending private material requires specific permission for that material and destination.
-4. Implement original code or reuse code under an explicitly compatible license with its notices. Keep research claims separate from implementation choices.
-5. Compare controlled cases against the owned original where feasible. Align starting state, input sequence, random seed, coordinate convention and simulation steps. Record the reference environment and instrumentation effects.
-6. Use semantic tests: boundaries, malformed input, signedness, state ordering and relevant numerical edge cases. A build or plausible screenshot is insufficient. Use bitwise comparison only when warranted; justify numerical tolerances before examining results.
-7. If instrumentation is authorized, gate hooks on the exact binary and address validation, confirm activation, bound log volume, and provide a reversible exit. Compare uninstrumented and instrumented baselines. Stop on an unexpected target, corrupted state or unreliable evidence.
+For a tool/license/source question, run `python3 -B scripts/catalog_lookup.py --query ILSpy` or `--section 05`. Output is filtered and capped; refine the query or page deliberately. The [114-entry catalog and audit](references/resource-catalog.md) and [historical game/creator catalog](references/source-catalog.md) are optional lookups, not required reading. Courses/benchmarks are references, never executable adapters.
 
-## Deliver and stop honestly
+## Evidence and completion
 
-Use [validation and publication checks](references/validation.md). Report separately: analysis performed, compilation, synthetic tests, comparison against the original, rendered inspection and human gameplay review. State the tested build and coverage denominator; do not convert a function count into a gameplay-completion claim.
+For substantive research or implementation, load [the reconstruction workflow](references/reconstruction-workflow.md). Use [the decision guide](references/decision-guide.md) when the requested reconstruction type is unclear; [validation](references/validation.md) before claiming results or publishing. Keep target hashes, observations, hypotheses, failures and unknowns separate. A build, pseudocode or screenshot does not prove original source recovery or gameplay parity.
 
-Deliver the narrow result, evidence summary, source/notice ledger and next uncertainty. Before publishing, inspect staged files and history for private material and licenses. Do not expand a research request into model installation, paid inference, game execution, asset extraction, deployment or unrelated project changes.
+Default to read-only work. Keep private binaries, assets, dumps and decompiler output local; cloud disclosure requires authority for that material and destination ([local/cloud guidance](references/local-cloud.md) when relevant). Runtime actions need their actual operation/target in scope. No DRM/ownership/anti-cheat bypass, unrelated installation or paid calls. Clean-room records do not establish reuse rights; inspect licenses/notices before reuse or publication.

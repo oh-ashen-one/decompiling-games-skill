@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "operation": "static",
+  "host": "linux",
+  "authorization": {
+    "owned_or_authorized": true,
+    "operations": [
+      "static"
+    ]
+  },
+  "security_bypass": false,
+  "privacy": {
+    "agent": "local"
+  },
+  "observed": {
+    "format": "PE",
+    "runtime": "native",
+    "platform": "windows",
+    "architecture": "x86_64",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "evidence": {
+      "format": "SYNTHETIC test fixture: parsed format",
+      "runtime": "SYNTHETIC test fixture: parsed runtime",
+      "platform": "SYNTHETIC test fixture: parsed platform",
+      "architecture": "SYNTHETIC test fixture: parsed architecture",
+      "unity_runtime": "SYNTHETIC test fixture: parsed unity_runtime",
+      "session_identity": "SYNTHETIC test fixture: parsed session_identity"
+    }
+  },
+  "available_tools": [
+    {
+      "id": "rea",
+      "installed": true,
+      "version": "SYNTHETIC-test-only",
+      "pinned_docs": "SYNTHETIC reviewed fixture; not real tool verification",
+      "compatible_with_target": true,
+      "license_reviewed": true,
+      "local_transport": true
+    },
+    {
+      "id": "ghidra",
+      "installed": true,
+      "version": "SYNTHETIC-test-only",
+      "pinned_docs": "SYNTHETIC reviewed fixture; not real tool verification",
+      "compatible_with_target": true,
+      "license_reviewed": true,
+      "local_transport": true
+    }
+  ]
+}

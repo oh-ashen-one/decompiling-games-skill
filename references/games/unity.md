@@ -1,0 +1,4 @@
+# Unity
+Verified CLI/IL assemblies in a Unity Mono build → [ILSpy](https://github.com/icsharpcode/ILSpy); Windows runtime debugging → [dnSpyEx](https://github.com/dnSpyEx/dnSpy). Verify the assembly contents, not just `Assembly-CSharp.dll` names. IL2CPP-generated dummy assemblies are not proof of Mono.
+
+Verified IL2CPP native binary plus matching global metadata/registration/version evidence → [SamboyCoding/Cpp2IL](https://github.com/SamboyCoding/Cpp2IL) (MIT license inspected 2026-10-26). It is work in progress; metadata recovery, method signatures and partially recovered IL are distinct outcomes. Use Ghidra for unresolved native semantics, optionally ILSpy for recovered assembly inspection. Keep existing import/build/asset pipelines and tests. Harmony is a managed-runtime patching library, not a universal IL2CPP hook.

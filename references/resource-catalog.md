@@ -1,6 +1,6 @@
 # Audited toolkit index — 2026-10-26
 
-The complete per-entry audit is [resource-catalog.json](resource-catalog.json): original label, section, canonical primary-source URL, license surface, type, status and routing caveat. Search by name/section and read only relevant entries. Use [tool routing](tool-routing.md), not popularity, to select a tool. The earlier [game/creator catalog](source-catalog.md) and [specialist routes](game-specialists.md) remain intact.
+The complete per-entry audit is [resource-catalog.json](resource-catalog.json): original label, section, canonical primary-source URL, license surface, type, status and routing caveat. Retrieve only matching records with `python3 -B scripts/catalog_lookup.py --query <tool>` or `--section 05` (default five records, explicit pagination). Do not read the full JSON or this audit report for routine routing. Use [tool routing](tool-routing.md), not popularity, to select a tool. The earlier [game/creator catalog](source-catalog.md) and [specialist routes](game-specialists.md) remain intact.
 
 | Section | Named mentions |
 |---|---:|

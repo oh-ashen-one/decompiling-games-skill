@@ -6,7 +6,7 @@ This repository contains original guidance and synthetic examples. It contains n
 
 ## Start here
 
-Read [SKILL.md](SKILL.md), then select a route in the [decision guide](references/decision-guide.md). For Bully, use the [edition-specific workflow](references/bully-workflow.md). The default example is **PC Scholarship Edition binary analysis and behavioral reimplementation**; the optional Xbox 360 static-recompilation route requires a different, compatible input.
+Read the compact [SKILL.md](SKILL.md), then only the matching domain/game reference. Catalogs and audit reports are optional lookups; linked files are not includes. Use the [decision guide](references/decision-guide.md) when the reconstruction type is unclear. For Bully, use the [edition-specific workflow](references/bully-workflow.md). The default example is **PC Scholarship Edition binary analysis and behavioral reimplementation**; the optional Xbox 360 static-recompilation route requires a different, compatible input.
 
 To use with an agent, provide the repository and ask it to follow `SKILL.md`. For example:
 

@@ -36,7 +36,7 @@ def route(request, catalog=None):
               "primary": None, "fallback": None, "references": [], "reasons": [],
               "execution": "No tool executed; follow references/tool-routing.md before use."}
     if operation == "learn":
-        result.update(status="education_only", route="education", references=["references/resource-catalog.md#education"])
+        result.update(status="education_only", route="education", references=["references/routes/education.md"])
         result["reasons"].append("Courses and benchmarks are references, never executable tool selections.")
         return result
     authorization = request.get("authorization", {})
